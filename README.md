@@ -15,7 +15,7 @@ The test environment assumes:
 ## 🛠️ Key Features
 - Configures ADXL345 to operate at the maximum data rate within constraints.
 - Performs a built-in self-test and validates result ranges.
-- Monitors accelerometer data during motion:
+- Utilizes Python **threading** to continuously read and validate sensor data against tight physical limits while the blocking actuator motion is in progress, ensuring complete coverage.
   - `slow_climb`: Validate tilt limits for Y and Z axes.
   - `sharp_turn`: Validate acceleration on X and Y axes.
   - `quick_drop`: Validate negative Z-axis acceleration.
