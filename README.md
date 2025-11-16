@@ -21,3 +21,12 @@ The test environment assumes:
   - `quick_drop`: Validate negative Z-axis acceleration.
 - Always logs test result with detailed timing and failure details.
 - Graceful exception handling to ensure safe cleanup and reporting.
+
+## ⚠️ Note
+This code is intended as a conceptual demonstration of embedded test automation. This script is **non-executable in its current form**. It relies on a simulated hardware interaction layer (`test_board_fwk`) not included in this repository. The intent of this project is to showcase:
+
+- Python-based test sequencing for embedded hardware
+- ADXL345 accelerometer configuration and validation
+- System-level test planning and exception management
+
+
